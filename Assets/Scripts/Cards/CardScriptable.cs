@@ -10,10 +10,8 @@ public class CardScriptable : ScriptableObject
     public double cardMana;
     public string cardDescription;
     public CardType cardType;
-    public Image cardImage;
-    public UnityEvent cardEvent;
-    
-    
+    public Sprite cardImage;
+
     public enum CardType
     {
         Attack,
