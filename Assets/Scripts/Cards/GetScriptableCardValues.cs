@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GetScriptableCardValues : MonoBehaviour
 {
-    public SpriteRenderer sprite;
+    public Image sprite;
     public TextMeshProUGUI descriptionText;
     public TextMeshProUGUI cardName;
     public TextMeshProUGUI manaText;
