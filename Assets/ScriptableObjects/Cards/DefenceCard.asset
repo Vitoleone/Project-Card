@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c8e9817daa69e949bd875fb300bf126, type: 3}
-  m_Name: AttackCard
+  m_Name: DefenceCard
   m_EditorClassIdentifier: 
-  cardName: Attack Card
+  cardName: Defence Card
   cardMana: 1
-  cardDescription: This is an attack card example
-  cardType: 0
-  cardImage: {fileID: -2046621808, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+  cardDescription: This is a defence card example.
+  cardType: 1
+  cardImage: {fileID: 871237640, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
