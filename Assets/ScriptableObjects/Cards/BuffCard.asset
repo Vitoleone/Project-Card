@@ -16,4 +16,4 @@ MonoBehaviour:
   cardMana: 3
   cardDescription: This is a buff card example.
   cardType: 2
-  cardImage: {fileID: 587968530, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+  cardImage: {fileID: 21300000, guid: a92695b3c4fa34785a5d8f082d3f1e86, type: 3}

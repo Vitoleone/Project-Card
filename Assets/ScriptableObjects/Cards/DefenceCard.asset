@@ -16,4 +16,4 @@ MonoBehaviour:
   cardMana: 1
   cardDescription: This is a defence card example.
   cardType: 1
-  cardImage: {fileID: 871237640, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+  cardImage: {fileID: 21300000, guid: 01108ebbe76284f028fd4f9b91f7aa59, type: 3}

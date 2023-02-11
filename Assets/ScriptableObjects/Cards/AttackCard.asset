@@ -16,4 +16,4 @@ MonoBehaviour:
   cardMana: 1
   cardDescription: This is an attack card example
   cardType: 0
-  cardImage: {fileID: -2046621808, guid: b922d3369baae4e479ff1294d644fb88, type: 3}
+  cardImage: {fileID: 21300000, guid: 3cce10b5b4cb54228b5eea150228e144, type: 3}
