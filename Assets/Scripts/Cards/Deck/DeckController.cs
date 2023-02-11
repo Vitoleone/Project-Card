@@ -28,6 +28,7 @@ public class DeckController : MonoBehaviour
                 GameObject newCardInDeck = Instantiate(cardInDeck, cardsPanel.transform.position, quaternion.identity);
                 newCardInDeck.transform.parent = cardsPanel.transform;
                 newCardInDeck.transform.localScale = Vector3.one;
+                newCardInDeck.GetComponent<GetScriptableCardValues>().UpdateValues(card);
                 cardInDeck.GetComponent<GetScriptableCardValues>().cardScriptable = card;
             }   
         }

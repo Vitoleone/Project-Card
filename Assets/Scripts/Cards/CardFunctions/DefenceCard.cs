@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-
-public class HeroCard : MonoBehaviour
+public class DefenceCard : MonoBehaviour
 {
     private Vector3 defaultScale;
+    private GameManager gameManager;
     private void Start()
     {
         Physics2D.queriesHitTriggers = true;
         defaultScale = transform.localScale;
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     private void OnMouseDown()
     {
-        Debug.Log("Hero");
+        Debug.Log("Defence");
+        gameManager.instance.hand.Remove(gameObject);
+        Destroy(gameObject);
     }
 
     private void OnMouseEnter()

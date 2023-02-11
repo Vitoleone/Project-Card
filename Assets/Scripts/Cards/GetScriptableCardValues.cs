@@ -18,7 +18,9 @@ public class GetScriptableCardValues : MonoBehaviour
 
 
     public CardScriptable cardScriptable;
-    void Start()
+    
+
+    public void SetValues()
     {
         sprite.sprite = cardScriptable.cardImage;
         descriptionText.text = cardScriptable.cardDescription;
@@ -40,7 +42,29 @@ public class GetScriptableCardValues : MonoBehaviour
                 break;
             
         }
-        
+    }
+    public void UpdateValues(CardScriptable cardScriptable)
+    {
+        sprite.sprite = cardScriptable.cardImage;
+        descriptionText.text = cardScriptable.cardDescription;
+        cardName.text = cardScriptable.cardName;
+        manaText.text = cardScriptable.cardMana.ToString();
+        switch (cardScriptable.cardType)
+        {
+            case CardScriptable.CardType.Attack:
+                typeTemplate.sprite = attackTemplate;
+                break;
+            case CardScriptable.CardType.Buff:
+                typeTemplate.sprite = buffTemplate;
+                break;
+            case CardScriptable.CardType.Defence:
+                typeTemplate.sprite = deffenceTemplate;
+                break;
+            case CardScriptable.CardType.Hero:
+                typeTemplate.sprite = heroTemplate;
+                break;
+            
+        }
     }
     public enum CardType
     {
