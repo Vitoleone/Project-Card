@@ -7,23 +7,28 @@ using DG.Tweening;
 public class AttackCard : MonoBehaviour
 {
   private Vector3 defaultScale;
+  private float dafaultZPosition;
+  private GameManager gameManager;
   private void Start()
   {
     Physics2D.queriesHitTriggers = true;
     defaultScale = transform.localScale;
+    gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
   }
 
   private void OnMouseDown()
   {
     Debug.Log("Attack");
+    gameManager.instance.hand.Remove(gameObject);
+    Destroy(gameObject);
   }
 
   private void OnMouseEnter()
   {
-    transform.DOScale(defaultScale*1.2f, 0.3f);
+      transform.DOScale(defaultScale*1.2f, 0.3f);
   }
   private void OnMouseExit()
   {
-    transform.DOScale(defaultScale, 0.3f);
+      transform.DOScale(defaultScale, 0.3f);
   }
 }
