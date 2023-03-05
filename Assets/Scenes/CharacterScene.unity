@@ -839,6 +839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levellingPanel: {fileID: 2132734163}
+  characterScriptableToGameObject: {fileID: 1207035233}
 --- !u!4 &400495727
 Transform:
   m_ObjectHideFlags: 0
@@ -1836,7 +1837,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 848646678}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 400495726}
+        m_TargetAssemblyTypeName: CharacterSceneButtonManager, Assembly-CSharp
+        m_MethodName: PreviousCharacterButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &848646678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2691,7 +2704,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1029633902}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 400495726}
+        m_TargetAssemblyTypeName: CharacterSceneButtonManager, Assembly-CSharp
+        m_MethodName: NextCharacterButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1029633902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3256,6 +3281,57 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf69761cd80e34a4e9c98c68bbd8f0c4, type: 3}
+--- !u!1 &1207035232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1207035234}
+  - component: {fileID: 1207035233}
+  m_Layer: 0
+  m_Name: CharacterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1207035233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207035232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b1f905f47e31cc4cace00c355781910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characters:
+  - {fileID: 11400000, guid: 7c33443f5df0d0e43921f7d769dedff8, type: 2}
+  - {fileID: 11400000, guid: cb48c4be73c528a4c9b86e549b66ab3e, type: 2}
+  - {fileID: 11400000, guid: 35d2b5e222b745344b868b87c53deabb, type: 2}
+  characterLevel: {fileID: 38984048}
+  characterName: {fileID: 1623872575}
+  characterImage: {fileID: 647525512}
+--- !u!4 &1207035234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207035232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.08548, y: -1414.6033, z: -17.032694}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1256472076
 PrefabInstance:
   m_ObjectHideFlags: 0
