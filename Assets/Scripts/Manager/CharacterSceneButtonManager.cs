@@ -19,7 +19,7 @@ public class CharacterSceneButtonManager : MonoBehaviour
 
     public void StartButton()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("RoomScene");
     }
     public void MenuButton()
     {
