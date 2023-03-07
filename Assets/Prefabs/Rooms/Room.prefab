@@ -89,6 +89,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58e502e1dc1974e40951ad9993596e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floor: 0
-  roomIndex: 0
-  roomType: 0
+  floor: 7
+  roomIndex: 5
+  roomType: 3

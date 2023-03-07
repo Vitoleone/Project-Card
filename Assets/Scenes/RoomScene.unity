@@ -123,6 +123,59 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &170570938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 170570940}
+  - component: {fileID: 170570939}
+  m_Layer: 0
+  m_Name: RoomGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &170570939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170570938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95d5525541d969b459e55a3c1e490ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: 7283384913548625471, guid: 0f6b3b9c421c5b044a66cf6f91d6ca57, type: 3}
+  roomPanel: {fileID: 1677940657}
+  rooms: []
+  roomImages:
+  - {fileID: 21300000, guid: 1c3aa6ee34265c2489dbf5ada21382f8, type: 3}
+  - {fileID: 21300000, guid: 7ed9ca67ffd6e7c4fb81efc2e82bdd62, type: 3}
+  - {fileID: 21300000, guid: 6fa70706bad0d07499e6c35adc71629f, type: 3}
+  - {fileID: 21300000, guid: 75ceac11ae98df4458cb28a00b5c2f22, type: 3}
+  - {fileID: 21300000, guid: 27160850408531b4b83c64c4a598e08d, type: 3}
+--- !u!4 &170570940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170570938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 318.96344, y: 186.53235, z: -2.41404}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &345151571
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +471,7 @@ GameObject:
   - component: {fileID: 942133616}
   - component: {fileID: 942133615}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Rooms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,7 +523,7 @@ MonoBehaviour:
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 609498182}
   m_HorizontalScrollbarVisibility: 2
-  m_VerticalScrollbarVisibility: 2
+  m_VerticalScrollbarVisibility: 0
   m_HorizontalScrollbarSpacing: -3
   m_VerticalScrollbarSpacing: -3
   m_OnValueChanged:
@@ -752,7 +805,7 @@ MonoBehaviour:
   m_CellSize: {x: 125, y: 125}
   m_Spacing: {x: 50, y: 150}
   m_Constraint: 0
-  m_ConstraintCount: 2
+  m_ConstraintCount: 5
 --- !u!1 &1829586715
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,9 +842,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -17, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1829586717
 MonoBehaviour:
