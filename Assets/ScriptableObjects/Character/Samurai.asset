@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9da1ff70b5fdc8a48bc28e8ab56e7120, type: 3}
   m_Name: Samurai
   m_EditorClassIdentifier: 
-  character: 0
+  character: 1
   characterLevel: 10
   currentExp: 0
   startDeck: {fileID: 0}
